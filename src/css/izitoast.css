@@ -1,0 +1,40 @@
+.icon-custom {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.iziToast.custom-toast .iziToast-body {
+  padding-right: 24px;
+}
+
+.iziToast-close-custom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.iziToast-close-custom svg {
+  width: 10px;
+  height: 10px;
+  fill: #fff;
+  pointer-events: none;
+  transition: fill 0.2s ease;
+}
+
+.iziToast-close-custom:hover svg {
+  fill: #ddd;
+}
