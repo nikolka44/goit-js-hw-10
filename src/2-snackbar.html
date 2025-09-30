@@ -9,41 +9,31 @@
   </head>
   <body>
     <main>
-      <a class="back-link" href="./index.html">Go back</a>
-      <div class="container container-form">
-        <form class="form">
-          <label class="delay-label">
-            Delay (ms)
-            <input class="delay-input" type="number" name="delay" required />
-          </label>
-
-          <fieldset class="delay-field">
-            <legend class="delay-titel">State</legend>
-            <label class="delay-label-radio">
-              <input
-                class="delay-radio"
-                type="radio"
-                name="state"
-                value="fulfilled"
-                required
-              />
-              Fulfilled
-            </label>
-            <label class="delay-label-radio">
-              <input
-                class="delay-radio"
-                type="radio"
-                name="state"
-                value="rejected"
-                required
-              />
-              Rejected
-            </label>
-          </fieldset>
-
-          <button class="delay-btn" type="submit">Create notification</button>
-        </form>
+      <div class="container">
+        <a class="back-link" href="./index.html">Go back</a>
+        <h1 class="main-title">Snackbar</h1>
       </div>
+
+      <form class="form">
+        <label class="input-label">
+          Delay (ms)
+          <input class="input-field" type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend class="radio-btn-bar">State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
     </main>
 
     <load src="./partials/footer.html" />

@@ -3,7 +3,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import '../css/izitoast.css';
-// import spriteUrl from '../img/sprite.svg';
+import spriteUrl from '../img/sprite.svg';
 
 const inputEl = document.querySelector("input[type='text']");
 const btnEl = document.querySelector('.btn-js');
@@ -22,7 +22,7 @@ const options = {
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
-  onChange(selectedDates) {
+  onClose(selectedDates) {
     if (selectedDates[0] <= new Date()) {
       btnEl.disabled = true;
       iziToast.error({
